@@ -13,7 +13,7 @@ public class XPEconomyType extends EconomyType {
         if (!player.isOnline()) {
             throw new AssertionError("Player is offline!");
         }
-        player.giveExp(Integer.parseInt(String.valueOf(amount)));
+        player.giveExpLevel(Integer.parseInt(String.valueOf(amount)));
     }
 
     @Override
